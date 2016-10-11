@@ -1,21 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-      <title>Number Guesser</title>
-      <link href="css/main.css" type="text/css" rel="stylesheet">
-      <link href="css/reset.css" type="text/css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <h1>Number Guesser</h1>
-    </header>
-    <input type="number" name="userNumber" value="" min="1" max="100">
+<head>
+  <title> Number Guesser </title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=true;">
+</head>
+
+<body>
+  <header>
+    <h1> Number <span>Guesser</span></h1>
+  </header>
+
+  <section class="userinput">
+    <input type="number" name="userNumber" value="" min="1" max="100"/>
+    <br/>
     <button type="button" name="guess">Guess</button>
-    <button type="button" name="clear" disabled="true">Clear</button>
-    <button type="button" name="reset">Reset</button>
+    <button type="button" disabled="true" name="clear">Clear</button>
+  </section>
+
+  <div class="response">
+  <output>
     <p>Your last guess was</p>
-    <h2 class="pink-number"></h2>
-    <p class="high-low"></p>
-  </body>
+     <h2 class="pink-number"> 25 </h2>
+     <p class="high-low"></p>
+  </div>
+
+  <footer>
+    <button type="button" name="reset"> Reset </button>
+
+</body>
 </html>
+
 <script src="js/javascript.js"></script>

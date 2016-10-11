@@ -1,1 +1,62 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
 
+}
+
+header {
+  background-color: #404041;
+  font-size: 50px;
+  padding: 20px;
+}
+
+h1 {
+  color: #ED458B;
+  font-weight: 700;
+}
+
+h1 span {
+  color: #E6E7E8;
+  font-weight: 300;
+}
+
+input {
+  margin: 30px;
+  padding: 5px 125px;
+}
+
+button {
+  background-color: #D0D2D3;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 25px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  padding: 10px 60px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #EB008B;
+  color: #FFFFFF;
+}
+
+output p {
+  color: #404041;
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px;
+  font-weight: 300;
+}
+
+.pink-number {
+  display: block;
+  color:#EB008B;
+  font-size: 200px;
+  padding: 10px
+}
+
+button.reset {
+  padding: 10px 150px;
+}
