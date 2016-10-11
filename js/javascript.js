@@ -58,3 +58,7 @@ userInput.addEventListener('input', function() {
   }
 
  })
+
+ for (i = 0; i < array.length; i++) {
+   array[i]
+ }
