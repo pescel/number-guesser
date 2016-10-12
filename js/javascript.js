@@ -86,3 +86,7 @@ userInput.addEventListener('input', function() {
   }
 
  })
+
+ if(userNumber === randomNum) {
+   
+ }
