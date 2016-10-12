@@ -35,16 +35,16 @@ maxInput.addEventListener('input', function() {
 });
 
 guessButton.addEventListener('click', function() {
+  console.log(randomNum);
   //when guess button is clicked (triggers 'click' event) runs everything in between {}.
   var userNumber = userInput.value;
-
   userNumber = parseInt(userNumber);
   //finds input field with attribute name='userNumber' and grabs the value (number). ParseInt changes strings to intergers.
   if(isNaN(userNumber)) {
     return alert("This is not a number!");
   }
 
-  if(userNumber > 100 || userNumber < 0) {
+  if(userNumber > max || userNumber < min) {
     alert("This number is outside the range of possible answers!")
   }
 
@@ -57,6 +57,11 @@ guessButton.addEventListener('click', function() {
     document.querySelector(".high-low").innerText = "That is too high"
   } else {
     document.querySelector(".high-low").innerText = "YAYAAYAYAY!"
+    max = max + 10;
+    min = min - 10;
+    randomNum = getRandom(min, max)
+    minInput.value = min
+    maxInput.value = max
   }
 });
 
@@ -84,7 +89,3 @@ userInput.addEventListener('input', function() {
   } else {
     clearButton.disabled = true;
   } })
-
-   if(userNumber === randomNum) {
-
-   } 
