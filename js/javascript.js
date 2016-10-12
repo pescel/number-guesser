@@ -55,6 +55,4 @@ userInput.addEventListener('input', function() {
     clearButton.disabled = false;
   } else {
     clearButton.disabled = true;
-  }
-
- })
+  } })
