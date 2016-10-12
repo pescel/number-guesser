@@ -84,3 +84,7 @@ userInput.addEventListener('input', function() {
   } else {
     clearButton.disabled = true;
   } })
+
+   if(userNumber === randomNum) {
+
+   } 
