@@ -13,16 +13,20 @@
   </header>
 
   <section class="userinput">
-    <input type="number" name="userNumber" value="" min="1" max="100"/>
-    <input type="number" name="min" value="0"/>
-    <input type="number" name="max" value="100"/>  
+      <article class="div1">
+        <p>From: </p>
+          <input type="number" name="min" value="0"/></article>
+      <article class="div2">
+        <p>To:</p>
+        <input type="number" name="max" value="100"/></article>
+    <br/>
+    <input type="number" name="userNumber" value="" min="1" max="100" placeholder="Enter your guess..."/>
     <br/>
     <button type="button" name="guess">Guess</button>
     <button type="button" disabled="true" name="clear">Clear</button>
   </section>
 
   <div class="response">
-  <output>
     <p>Your last guess was</p>
      <h2 class="pink-number"> 25 </h2>
      <p class="high-low"></p>
