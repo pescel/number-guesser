@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   text-align: center;
-
+  font-weight: 300;
 }
 
 header {
@@ -21,9 +21,22 @@ h1 span {
 }
 
 input {
-  margin: 30px;
-  padding: 5px 125px;
+  margin: 10px;
+  padding: 5px 5px;
+  width: 60%;
+  border: 1px solid #D0D2D3;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.div1, .div2, p {
+  display:inline-block;
+  color: #404041;
+}
+
 
 button {
   background-color: #D0D2D3;
@@ -42,12 +55,8 @@ button:hover {
   color: #FFFFFF;
 }
 
-output p {
-  color: #404041;
-  font-size: 20px;
-  padding: 10px;
-  margin: 20px;
-  font-weight: 300;
+.response {
+  margin-top: 15px;
 }
 
 .pink-number {
@@ -62,10 +71,10 @@ button.reset {
 }
 
 @media screen and (max-width: 500px) {
-    button {
+    button, {
       width:90%;
     }
     header {
       font-size: 40px;
     }
-}
+  }
